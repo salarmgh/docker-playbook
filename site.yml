@@ -1,0 +1,4 @@
+---
+- hosts: anemone
+  roles:
+    - role: docker

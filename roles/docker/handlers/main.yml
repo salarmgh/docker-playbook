@@ -1,0 +1,4 @@
+- name: restart docker
+  include: restart_docker.yml
+- name: reload systemd
+  include: reload_systemd.yml

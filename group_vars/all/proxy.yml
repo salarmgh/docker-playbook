@@ -1,0 +1,4 @@
+#proxy_env:
+#  http_proxy: http://USER:PASS@HOST:PORT
+#  https_proxy: http://USER:PASS@HOST:PORT
+#  no_proxy: "localhost,127.0.0.1,::1"

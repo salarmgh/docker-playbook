@@ -1,0 +1,15 @@
+---
+- name: Install docker
+  include_tasks: docker.yml
+
+- name: Install docker-compose
+  include_tasks: docker-compose.yml
+  when: docker_install_compose | bool
+
+- name: Add users to docker group
+  include_tasks: users.yml
+  when: users | length > 0
+
+- name: Set proxy for docker
+  include_tasks: proxy.yml
+  when: proxy_env is defined

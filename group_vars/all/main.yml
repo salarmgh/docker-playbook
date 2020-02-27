@@ -1,0 +1,4 @@
+---
+include_vars:
+  - docker.yml
+  - docker-compose.yml
